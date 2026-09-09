@@ -1,5 +1,5 @@
 //Olena
-// Assigment 1
+// Assignment 1
 
 #include <iostream>
 #include <string>
