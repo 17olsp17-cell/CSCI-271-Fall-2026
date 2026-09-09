@@ -13,7 +13,7 @@ cout << "What is your name?";
 string name;
 cin >> name;
 
-count << "Nice to meet you, " << name << "!" << endl;
+cout << "Nice to meet you, " << name << "!" << endl;
 
 return 0;
 }
