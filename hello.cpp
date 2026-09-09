@@ -8,11 +8,12 @@ using namespace std;
 
 int main () {
 
-cout << "Hello, word!" << endL;
+cout << "Hello, word!" << endl;
 cout << "What is your name?";
 string name;
 cin >> name;
 
-count << "Nice to meet you, " << Olena << "!" << endL;
+count << "Nice to meet you, " << name << "!" << endl;
 
 return 0;
+}
