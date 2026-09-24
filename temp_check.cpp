@@ -1,5 +1,7 @@
 #include <iostream> //input,output library
 using namespace std; //standard namespace
+// Olena Spivak
+// Assignment 3
 
 int main() //main function
 {
