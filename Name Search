@@ -1,0 +1,31 @@
+// Olena Spivak
+// Assignment 8
+//Name Search
+
+#include <iostream> // Allows input and output.
+#include <string>   // Allows strings and getline.
+#include <vector>   // Allows vectors.
+using namespace std; // Allows names without std::.
+
+int main() { // Starts the program.
+    vector<string> names = {"Maya Rivera", "Jane Green", "Sam"}; // Stores three names.
+    string name; // Stores the user's input.
+    bool found = false; // Tracks whether a match was found.
+
+    cout << "Search for: "; // Asks for a name.
+    getline(cin, name); // Reads the full name.
+
+    for (size_t i = 0; i < names.size(); i++) { // Checks each index.
+        if (names[i] == name) { // Compares the names.
+            cout << "Found at index " << i << endl; // Prints the index.
+            found = true; // Records the match.
+            break; // Stops searching.
+        }
+    }
+
+    if (!found) { // Checks whether no match was found.
+        cout << "Not found" << endl; // Prints the message.
+    }
+
+    return 0; // Ends the program.
+}
