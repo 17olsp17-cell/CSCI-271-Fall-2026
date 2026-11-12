@@ -1,0 +1,25 @@
+// Olena Spivak
+// Assignment 8
+//Vowel Counter
+
+#include <iostream>// Allows input and output.
+#include <string>// Allows strings and getline.
+using namespace std;// Allows names without std::.
+
+int main() {// Starts the program.
+    string sentence;// Stores the sentence.
+    int count = 0;// Stores the number of vowels.
+    string vowels = "aeiouAEIOU";// Lists all vowels.
+
+    cout << "Enter a sentence: ";// Asks for a sentence.
+    getline(cin, sentence);// Reads the full sentence.
+
+    for (char letter : sentence) {// Checks each character.
+        if (vowels.find(letter) != string::npos) {// Checks if it is a vowel.
+            count++;// Adds one to the count.
+        }
+    }
+
+    cout << "Vowels: " << count << endl;// Prints the result.
+    return 0;// Ends the program.
+}
