@@ -1,0 +1,20 @@
+#include <iostream>// input, output library
+#include <string>// string library
+using namespace std;// standard namespace
+
+int main() {// main function
+    string name;// name variable
+    int age;// age variable
+
+    cout << "Enter your name: ";// displays message
+    cin >> name;// gets name
+
+    cout << "Enter your age: ";// displays message
+    cin >> age;// gets age
+
+    cout << "Hello, I am " << name
+         << "! I am " << age
+         << " years old." << endl;// prints the user's age
+
+    return 0; // ends program
+}
